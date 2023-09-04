@@ -41,12 +41,14 @@ td {
     .container {
         width: 100%;
         font-size: 80%;
+        margin: 0 auto;
+
     }
 
     .container table {
         /* border-collapse: collapse; */
         width: 100%;
-        margin: 2rem;
+
     }
 
     table caption {
