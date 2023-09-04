@@ -11,6 +11,10 @@ body {
     --background-color: lightblue;
 }
 
+.container table {
+    width: 100%;
+}
+
 caption {
     font-size: 2rem;
     margin: 0.5rem 0rem;
@@ -27,12 +31,43 @@ td {
     text-align: center;
 }
 
+.container {
+    margin: 0 auto;
+}
 
 /* Media queries */
 
-@media (max-width: 768px) {
-    table {
+@media (max-width: 968px) {
+    .container {
         width: 100%;
-        border-collapse: collapse;
+        font-size: 80%;
     }
+
+    .container table {
+        /* border-collapse: collapse; */
+        width: 100%;
+        margin: 2rem;
+    }
+
+    table caption {
+        font-size: 80%;
+        margin: 0.1rem 0rem;
+    }
+
+
+    table th {
+        padding: 0.3rem;
+        text-align: center;
+        display: block;
+    }
+
+    table td {
+        padding: 0.4rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
 }
